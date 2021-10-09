@@ -2,7 +2,7 @@ li {
     list-style-type: none;
 }
 
-.special {
+#special {
     color: orange;
     font-weight: bold;
 }
@@ -40,7 +40,9 @@ body h1 + p .special {
     color: white;
 }
 
-h1.highlight {
+/*class选择器*/
+
+h2.highlight {
     background-color: pink;
 }
 
@@ -63,11 +65,40 @@ span.highlight {
     font-weight: bold;
 }
 
+/*ID选择器*/
+
 #one {
     background-color: yellow;
 }
 
-h1#heading {
+h2#heading {
     color: rebeccapurple;
 }
 
+/*属性选择器*/
+
+li[class] {
+    font-size: 200%;
+}
+
+li[class="a"] {
+    background-color: yellow;
+}
+
+li[class~="a"] {
+    color: red;
+}
+
+/*子字符串匹配选择器*/
+
+li[class^="a"] {
+    font-size: 200%;
+}
+
+li[class$="a"] {
+    background-color: yellow;
+}
+
+li[class*="a"] {
+    color: red;
+}

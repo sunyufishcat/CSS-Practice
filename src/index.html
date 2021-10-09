@@ -18,7 +18,7 @@
 
     <ul>
         <li>项目1</li>
-        <li class="special">项目2</li>
+        <li id="special">项目2</li>
         <li>项目 <em>三</em></li>
     </ul>
 
@@ -28,7 +28,8 @@
         </div>
     </div>
 
-    <h1 class="highlight">Class selectors</h1>
+    <!--class选择器-->
+    <h2 class="highlight">Class selectors</h2>
     <p>Veggies es bonus vobis, proinde vos postulo essum magis <span class="highlight">kohlrabi welsh onion</span> daikon amaranth tatsoi tomatillo
         melon azuki bean garlic.</p>
 
@@ -48,8 +49,28 @@
         This won't get styled — it also needs to have the noteBox class
     </div>
 
-    <h1 id="heading">ID selector</h1>
+    <!--ID选择器-->
+    <h2 id="heading">ID selector</h2>
     <p id="one">Gumbo beet greens corn soko <strong>endive</strong> gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard
         greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+    
+    <!--属性选择器-->
+    <h2>Attribute presence and value selectors</h2>
+    <ul>
+        <li>Item 1</li>
+        <li class="a">Item 2</li>
+        <li class="a b">Item 3</li>
+        <li class="ab">Item 4</li>
+    </ul>
+
+    <!--子字符串匹配选择器-->
+    <h2>Attribute substring matching selectors</h2>
+    <ul>
+        <li class="a">Item 1</li>
+        <li class="ab">Item 2</li>
+        <li class="bca">Item 3</li>
+        <li class="bcabc">Item 4</li>
+    </ul>
+
 </body>
 </html>
